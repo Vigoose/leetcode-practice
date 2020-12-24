@@ -40,7 +40,7 @@ public class MergeSort {
         int i = 0;
         int j = 0;
         int k = 0;
-        int[] res = new int[]{leftPart.length + rightPart.length};
+        int[] res = new int[leftPart.length + rightPart.length];
         while (i < leftPart.length && j < rightPart.length) {
             int left = leftPart[i];
             int right = rightPart[j];
@@ -63,18 +63,20 @@ public class MergeSort {
 
         while (j < rightPart.length) {
             res[k] = rightPart[j];
-            i++;
+            j++;
             k++;
         }
-
         return res;
     }
 
     public static void main(String[] args) {
-        int[] a = {2,1,3,5,8,9,3};
+        int[] a = {2,1,3,5,8,9,3,2,3,4,3,3,4};
         MergeSort ms = new MergeSort();
         int[] res = ms.mergeSort(a);
-        System.out.println(res);
+        System.out.print("This is the test for Merge Sort");
+        for (int i : res) {
+            System.out.println(i);
+        }
     }
     
 }
