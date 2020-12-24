@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MergeSort",
+            "request": "launch",
+            "mainClass": "MergeSort",
+            "projectName": "leetcode-practice_ad7582b0"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution2",
             "request": "launch",
             "mainClass": "Solution2",

@@ -78,6 +78,7 @@
  */
 
 // @lc code=start
+
 class Solution {
     public int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {
